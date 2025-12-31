@@ -5,6 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;   /* 🔴 IMPORTANT */
+}
+
 body {
     min-height: 100vh;
     background: linear-gradient(135deg, #0f3d2e, #0b2e23);
@@ -12,37 +18,48 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 16px;
     color: #fff;
     text-align: center;
 }
 
-/* Heading */
+/* Main heading */
 .head {
     color: antiquewhite;
-    font-size: clamp(24px, 6vw, 60px);
-    margin-bottom: 15px;
+    font-size: 7vw;       /* 🔴 vw works best for phones */
+    max-width: 100%;
+    word-wrap: break-word;
+    margin-bottom: 12px;
 }
 
 /* Message */
 .msg {
-    font-size: clamp(18px, 4.5vw, 40px);
+    font-size: 5vw;
     color: aqua;
-    margin-bottom: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    word-wrap: break-word;
+    margin-bottom: 8px;
 }
 
-/* Company Name */
+/* Company name */
 .name {
-    font-size: clamp(28px, 8vw, 80px);
+    font-size: 9vw;
     font-family: 'Orbitron', sans-serif;
     color: #ffe6e6;
-    letter-spacing: 2px;
+    max-width: 100%;
+    word-wrap: break-word;
+    letter-spacing: 1px;
 }
 
-/* Extra small screens */
-@media (max-width: 480px) {
-    body {
-        padding: 15px;
+/* Very small phones */
+@media (max-width: 360px) {
+    .head {
+        font-size: 6.5vw;
+    }
+    .msg {
+        font-size: 4.8vw;
+    }
+    .name {
+        font-size: 8vw;
     }
 }
