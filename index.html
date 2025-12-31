@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="eonithlogo.png">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div><h1 class="brand">EONITH</h1></div>
+        <div><h2 class="title">Job Application Form</h2></div>
+        <div class="formbox">
+            <form id="job-form">
+                <h3 class="fn">First Name:</h3>
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <h3 class="ln">Last Name:</h3>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <h3 class="age">Age:</h3>
+                <input type="number" name="age" placeholder="Age" >
+                <h3 class="dob">Date Of Birth:</h3>
+                <input type="date" name="DOB" placeholder="Date Of Birth" required> 
+                <h3 class="email">Email ID:</h3>
+                <input type="email" name="email" placeholder="Email ID" required>
+                <div class="gender-group">
+                    <h3 class="gender">Gender:</h3>
+                    <lable><input type="radio" name="gender" value="Male" required> Male</lable>
+                    <lable><input type="radio" name="gender" value="Female" required> Female</lable>
+                    <lable><input type="radio" name="gender" value="Other" required> Other</lable>
+                </div>
+                <h3 class="add">Address:</h3>
+                <input type="text" name="address" placeholder="Address" required> 
+                <h3 class="state">State:</h3>
+                <input type="text" name="state" placeholder="State" required>
+                <h3 class="city">City:</h3>
+                <input type="text" name="city" placeholder="City" required>
+                <h3 class="pin">PIN Code:</h3>
+                <input type="number" name="code" placeholder="PIN Code" required>
+                <h3 class="phn">Phone Number:</h3>
+                <input type="number" name="phn" placeholder="Phone Number" required>
+                <h3 class="alphn">Alternate Phone Number:</h3>
+                <input type="number" name="alphn" placeholder="Alternate Phone Number:" required>
+                <h3 class="slip">Upload Payment Slip:</h3>
+                <input type="file" id="slip" placeholder="Choose File" required>
+                <button type="submit" id="submit-btm">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
